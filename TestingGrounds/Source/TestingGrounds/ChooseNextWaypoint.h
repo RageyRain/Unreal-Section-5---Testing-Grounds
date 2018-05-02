@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTTaskNode.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
+#include "PatrollingGuard.h" //TODO remove coupling
 #include "ChooseNextWaypoint.generated.h"
 
 /**
@@ -21,7 +24,10 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "BlackBoard")
 	struct FBlackboardKeySelector IndexKeySelector;
 
-	
+	UPROPERTY(EditAnywhere, Category = "BlackBoard")
+	struct FBlackboardKeySelector WaypointKey;
+
+
 	
 	
 };
