@@ -7,7 +7,6 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"
 #include "PatrolRoute.h"
-//#include "PatrollingGuard.h" //TODO remove coupling
 #include "ChooseNextWaypoint.generated.h"
 
 /**
